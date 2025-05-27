@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS orders (
   price DECIMAL(10,2),
   quantity INT NOT NULL,
   remaining_quantity INT NOT NULL,
-  status ENUM('open', 'partially_filled', 'filled', 'canceled') DEFAULT 'open',
+  status ENUM('open', 'partially_filled', 'filled', 'cancelled') DEFAULT 'open',
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
